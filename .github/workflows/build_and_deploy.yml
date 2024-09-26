@@ -18,7 +18,7 @@ jobs:
         run: npm install
 
       - name: Set Environment Variables
-        with:
+        env:
           VITE_SUPABASE_URL: ${{ secrets.VITE_SUPABASE_URL }}
           VITE_SUPABASE_KEY: ${{ secrets.VITE_SUPABASE_KEY }}
           VITE_UPSLASH_KEY: ${{ secrets.VITE_UPSLASH_KEY }}
